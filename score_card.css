@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.date {
+  font-family: "Montserrat";
+  margin: .4em;
+  font-size: 2.5em;
+}
+.scoreboard-card {
+  display: grid;
+  grid-template-columns: 3% 94% 3%;
+  width: 640px;
+  background-color: #FAFAFA;
+  font-family: "Montserrat";
+  color: #666666;
+  margin: 1em;
+  border-radius: 20px;
+  position: relative;
+}
+
+#score-card-list {
+  list-style: none;
+}
+
+.score-card {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.6%;
+  padding: 2em 0em;
+}
+
+span {
+  text-align: center;
+}
+
+.game-info {
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  padding: 0 1em;
+}
+
+.top-info {
+  text-align: center;
+}
+
+.game-type {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.middle-info {
+  text-align: center;
+  margin: auto 0;
+}
+
+.start-time {
+  font-weight: 700;
+  font-size: 2.1em;
+  text-align: center;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 21.4% 57.2% 21.4%;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.game-time {
+  display: grid;
+  padding: 0.7em 1em;
+}
+
+.period {
+  font-weight: 700;
+}
+
+.time {
+  font-weight: 500;
+}
+
+.final-text {
+  font-weight: 600;
+  padding: 0 0;
+  margin: auto auto;
+}
+
+.bottom-info {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-top: -.3em;
+  text-align: center;
+  color: #9B9B9B;
+}
+
+.broadcast-text {
+  margin-top: .1em;
+  font-weight: 400;
+  font-size: .9em;
+}
+
+.venue-text {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.goal-info {
+  margin-top: .3em;
+  font-weight: 700;
+  font-size: .9em;
+  color: #DE0000;
+}
+
+.goal-scorer {
+  font-weight: 600;
+  font-size: .9em;
+}
+
+.goalie {
+  font-weight: 600;
+  font-size: .75em;
+}
+
+.goalie-win {
+  margin-top: .2em;
+  color: #DE0000;
+}
+
+.game-number {
+  position: absolute;
+  top: 5%;
+  left: 5.5%;
+  font-size: .9em;
+  font-weight: 500;
+}
+
+.series-status {
+  position: absolute;
+  top: 5%;
+  right: 5.5%;
+  font-size: .83em;
+  font-weight: 400;
+  color: #9B9B9B;
+}
+.status-text {
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.away-status-text {
+  position: absolute;
+  top: 70%;
+  left: 8%;
+}
+
+.home-status-text {
+  position: absolute;
+  top: 70%;
+  right: 8%;
+}
+
+.status {
+  display: block;
+  height: 100%;
+  background-color: #E9E9E9;
+  /*background-color: #FFA000;
+  background-color: #DE0000;
+  background-color: #00EC00;*/
+}
+
+.away-status {
+  border-radius: 20px 0 0 20px;
+}
+
+.home-status {
+  border-radius: 0 20px 20px 0;
+}
+
+.team {
+  display: grid;
+}
+
+.team span {
+  padding: 0.1em 0;
+}
+
+.team-logo {
+  padding-bottom: .5em;
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.record {
+  font-weight: 500;
+  font-size: 1em;
+  color: #9B9B9B;
+}
+
+.sog {
+  font-weight: 500;
+  font-size: 1em;
+  color: #9B9B9B;
+}
+
+.hide {
+  display: none;
+}
+
+.preview {
+  display: none;
+}
+
+.no-preview {
+  display: dnone;
+}
+
+.playoff {
+  display: dnone;
+}
+
+.live {
+  display: none;
+}
+
+.final {
+  display: dnone;
+}
