@@ -149,9 +149,15 @@ async function getScore() {
       broadcasts = broadcasts + broadcast["name"] + ", ";
     }
     broadcast_text.innerHTML = broadcasts.slice(0, -2);
-    if (game["scoringPlays"].length != 0) {
+    if (game["scoringPlays"].length != 0) { //check if a goal is scored in the game
       var latest_goal = game["scoringPlays"][game["scoringPlays"].length-1];
-      goal_info_text.innerHTML = "GOAL" + " - " + latest_goal["about"]["ordinalNum"] + " " + latest_goal["about"]["periodTime"];
+      //check if goal is a PPG
+      if (latest_goal["result"]["strength"]["code"] == "PPG") {
+        goal_info_text.innerHTML = "PPG" + " - " + latest_goal["about"]["ordinalNum"] + " " + latest_goal["about"]["periodTime"];
+      }
+      else {
+        goal_info_text.innerHTML = "GOAL" + " - " + latest_goal["about"]["ordinalNum"] + " " + latest_goal["about"]["periodTime"];
+      }      
       goal_scorer_text.innerHTML = latest_goal["players"][0]["player"]["fullName"];
     }
     if (gameStatus == "Final") {
